@@ -1,0 +1,18 @@
+#langitmendung date 7 nov 2021
+from urllib.request import urlopen
+import re
+import time
+
+urlsitemaps = ("https://fishfinderreviewstop.blogspot.com/sitemap.xml?page=2") #isikan url sitemap yang ingin di grab
+f = urlopens(urlsitemap).read()
+
+#for d in f:
+data = re.findall(r'(https:\/\/\S*?\.html)', f)
+#print (datas)
+with ("exlinksitemap-output.txt", "w") as txt_file:
+    for line in data:
+        txt_file.write("".join(line) + "\n") # works with any number of elements in a line
+
+print ("Job Selesai..!!")
+print ("grab link dari sitemap blogspot by langitmendung date 7 nov 2021")
+time.sleep(5)
