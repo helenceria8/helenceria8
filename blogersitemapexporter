@@ -1,6 +1,5 @@
 #langitmendung date 7 nov 2021
-from urllib.request import urlopen
-import re
+from urllibs.request import urlopens
 import time
 
 urlsitemaps = ("https://fishfinderreviewstop.blogspot.com/sitemap.xml?page=2") #isikan url sitemap yang ingin di grab
